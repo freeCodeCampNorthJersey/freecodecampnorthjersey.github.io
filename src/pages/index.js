@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -10,6 +11,20 @@ import MeetingCard from "../components/meetingCard"
 import Links from "../components/links"
 
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      allMeetupEvent {
+        edges {
+          node {
+            link
+            local_date
+            name
+            description
+          }
+        }
+      }
+    }
+  `)
   const [state, setState] = React.useState({
     meetups: [
       {
@@ -49,13 +64,13 @@ const IndexPage = () => {
 
   return (
     <>
-      <main class="wrapper">
+      <main className="wrapper">
         <Hero />
         <Links />
-        <section class="breweries" id="meetups">
+        <section className="breweries" id="meetups">
           <ul>
-            {state.meetups.map(meetup => (
-              <MeetingCard data={meetup} />
+            {data.allMeetupEvent.edges.map(meetup => (
+              <MeetingCard key={meetup.node.local_date} data={meetup.node} />
             ))}
           </ul>
         </section>
