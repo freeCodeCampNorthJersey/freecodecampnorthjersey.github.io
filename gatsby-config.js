@@ -18,7 +18,7 @@ module.exports = {
       options: {
         // Learn about environment variables: https://gatsby.app/env-vars
         // Your Meetup.com API key can be retrieved here: https://secure.meetup.com/fr-FR/meetup_api/key/
-        key: "you need to get a key from meetup.com if you need it",
+        // key: "you need to get a key from meetup.com if you need it",
         // Mandatory: the URL name of a Meetup Group.
         // See the URL of the group page, e.g. https://www.meetup.com/FreeCodeCamp-Haledon/
         groupUrlName: "FreeCodeCamp-Haledon",
