@@ -66,7 +66,7 @@ const IndexPage = () => {
     <>
       <main className="wrapper">
         <Hero />
-        <Links />
+
         <section className="breweries" id="meetups">
           <ul>
             {data.allMeetupEvent.edges.map(meetup => (
@@ -75,6 +75,7 @@ const IndexPage = () => {
           </ul>
         </section>
       </main>
+      <Links />
       <footer>
         <p>&copy; 2019. Made with ❤ and CSS Grid.</p>
       </footer>
