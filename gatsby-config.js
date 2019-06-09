@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `freeCodeCamp NJ`,
+    title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -18,7 +18,7 @@ module.exports = {
       options: {
         // Learn about environment variables: https://gatsby.app/env-vars
         // Your Meetup.com API key can be retrieved here: https://secure.meetup.com/fr-FR/meetup_api/key/
-        // key: "you need to get a key from meetup if you're using it",
+        key: "process.env.MEETUP_KEY",
         // Mandatory: the URL name of a Meetup Group.
         // See the URL of the group page, e.g. https://www.meetup.com/FreeCodeCamp-Haledon/
         groupUrlName: "FreeCodeCamp-Haledon",
