@@ -3,9 +3,12 @@ import React from "react"
 function Footer() {
   return (
     <footer>
-      © {new Date().getFullYear()}, Built with
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
-      <p>Maker Depot</p>
+      © {new Date().getFullYear()}, freeCodeCampNJ
+      <p>
+        <a href="https://www.themakerdepot.com/">
+          Thanks to the Maker Depot for providing our meeting space!
+        </a>
+      </p>
     </footer>
   )
 }

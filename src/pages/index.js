@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import MeetingCard from "../components/meetingCard"
 import Links from "../components/links"
+import Footer from "../components/footer"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -39,9 +40,7 @@ const IndexPage = () => {
         </section>
       </main>
       <Links />
-      <footer>
-        <p>&copy; 2019. Made with ❤ and CSS Grid.</p>
-      </footer>
+      <Footer />
     </>
   )
 }
