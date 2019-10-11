@@ -650,6 +650,7 @@ a {
   text-align: center;
   display: inline-block;
   transition: all 0.3s;
+  padding: 5px;
 }
 
 a:hover {
