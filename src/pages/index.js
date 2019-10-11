@@ -67,7 +67,7 @@ const IndexPage = () => {
       <main className="wrapper">
         <Hero />
 
-        <section className="breweries" id="meetups">
+        <section className="meetups" id="meetups">
           <ul>
             {data.allMeetupEvent.edges.map(meetup => (
               <MeetingCard key={meetup.node.local_date} data={meetup.node} />

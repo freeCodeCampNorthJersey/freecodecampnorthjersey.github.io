@@ -691,24 +691,24 @@ a:hover {
   margin-top: 0.75rem;
 }
 
-/* breweries styles */
-.breweries {
+/* meetups styles */
+.meetups {
   padding: 2rem;
 }
 
-.breweries > ul {
+.meetups > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
   list-style: none;
 }
 
-.breweries > ul > li {
+.meetups > ul > li {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
 }
 
-.breweries > ul > li > figure {
+.meetups > ul > li > figure {
   max-height: 220px;
   overflow: hidden;
   border-top-left-radius: 0.5rem;
@@ -716,31 +716,31 @@ a:hover {
   position: relative;
 }
 
-.breweries > ul > li > figure > img {
+.meetups > ul > li > figure > img {
   width: 100%;
 }
 
-.breweries > ul > li > figure > figcaption {
+.meetups > ul > li > figure > figcaption {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 
-.breweries > ul > li > figure > figcaption > h3 {
+.meetups > ul > li > figure > figcaption > h3 {
   color: white;
   padding: 0.75rem;
   font-size: 1.25rem;
 }
 
-.breweries > ul > li > p {
+.meetups > ul > li > p {
   font-size: 1rem;
   line-height: 1.5;
   padding: 1rem 0.75rem;
   color: #666666;
 }
 
-.breweries > ul > li > a {
+.meetups > ul > li > a {
   padding: 0.5rem 1rem;
   margin: 0.5rem;
 }
